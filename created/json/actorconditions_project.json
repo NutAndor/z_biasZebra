@@ -1,0 +1,46 @@
+[
+    {
+        "id":"kentrabies",
+        "iconID":"actorconditions_japozero:40",
+        "name":"Carnivorous Rabies",
+        "category":"blood",
+        "roundEffect":{
+            "visualEffectID":"redSplash",
+            "increaseCurrentHP":{
+                "min":-3,
+                "max":-1
+            }
+        },
+        "abilityEffect":{
+            "increaseAttackChance":15,
+            "increaseAttackDamage":{
+                "min":-1,
+                "max":-2
+            },
+            "increaseMaxHP":-5,
+            "increaseMoveCost":4,
+            "increaseCriticalSkill":-10,
+            "increaseBlockChance":-10,
+            "increaseDamageResistance":-2
+        }
+    },
+    {
+        "id":"kentvoracity",
+        "iconID":"actorconditions_japozero:9",
+        "name":"Carnivorous Voracity",
+        "category":"mental",
+        "abilityEffect":{
+            "increaseAttackChance":25,
+            "increaseAttackDamage":{
+                "min":3,
+                "max":3
+            },
+            "increaseMaxHP":-5,
+            "increaseMaxAP":3,
+            "increaseMoveCost":0,
+            "increaseCriticalSkill":10,
+            "increaseBlockChance":2,
+            "increaseDamageResistance":2
+        }
+    }
+]

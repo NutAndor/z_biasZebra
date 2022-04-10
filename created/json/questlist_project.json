@@ -1,0 +1,129 @@
+[
+    {
+        "id":"kentquest1",
+        "name":"Into The Woods",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Nafi's lover and elder son are missing somewhere in the woods. She wants me to find them. "
+            },
+            {
+                "progress":2,
+                "logText":"Manay refused to help with finding Nafi's lover"
+            },
+            {
+                "progress":3,
+                "logText":"Nafi's younger son told me that there's a she-bear in the area. Apparently, they hunted her cubs, and he thinks she wanted revenge."
+            },
+            {
+                "progress":4,
+                "logText":"I have found Istif. He was injured and I healed him. All that is left is finding his father",
+                "rewardExperience":2000
+            },
+            {
+                "progress":5,
+                "logText":"Nafi's lover has been killed by the bear"
+            },
+            {
+                "progress":6,
+                "logText":"I have told Nafi that I killed the she-bear",
+                "rewardExperience":10000
+            },
+            {
+                "progress":7,
+                "logText":"I informed Nafi of what transpired. She is thankful, but sad.",
+                "rewardExperience":5000,
+                "finishesQuest":1
+            }
+        ]
+    },
+    {
+        "id":"kentquest2",
+        "name":"King's Disease",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Mostef is confident that outsiders poisoned his village."
+            },
+            {
+                "progress":2,
+                "logText":"Jasem believes that Kent's Hollow is suffering from a disease. He thinks that they've been cursed by Gunret."
+            },
+            {
+                "progress":3,
+                "logText":"Gunret said that the village is sick because they eat bad food. "
+            },
+            {
+                "progress":4,
+                "logText":"Gunret denies Jasem's allegations and insists that the village is sick because they eat bad food."
+            },
+            {
+                "progress":5,
+                "logText":"There was a rabid pup just outside of Kent's Hollow. It seemed to be infected by some disease. When it bit me, I felt weaker and  more aggressive."
+            },
+            {
+                "progress":6,
+                "logText":"Manay did not believe me."
+            },
+            {
+                "progress":7,
+                "logText":"Jasem did not believe me, he still thinks Gunret caused the illness."
+            },
+            {
+                "progress":8,
+                "logText":"Ka recovered thanks to the root juice. Mostef is very thankful.",
+                "rewardExperience":5000,
+                "finishesQuest":1
+            }
+        ]
+    },
+    {
+        "id":"rootquesthidden",
+        "name":"rootquesthidden",
+        "stages":[
+            {
+                "progress":1,
+                "logText":""
+            },
+            {
+                "progress":2,
+                "logText":""
+            }
+        ]
+    },
+    {
+        "id":"kentquest3",
+        "name":"Alchemic Pollution",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Mostef wonders what started the infection in the first place. Could it be the wolves' new source of food?"
+            },
+            {
+                "progress":2,
+                "logText":"There are large logs blocking the path further into the woods."
+            },
+            {
+                "progress":3,
+                "logText":"I have asked Jasem to clear the logs."
+            },
+            {
+                "progress":4,
+                "logText":"Deep in the forest, where the trees have withered, I found a wolf in a terrible state. How is it even alive?"
+            },
+            {
+                "progress":5,
+                "logText":"There is a pond of chemical sludge deep in the forest. It seems that the wolves have been feeding on it."
+            },
+            {
+                "progress":6,
+                "logText":"6- I've told Jasem about the pool of sludge. He is worried, but refuses to stop eating wolf meat.",
+                "rewardExperience":7500,
+                "finishesQuest":1
+            }
+        ]
+    }
+]

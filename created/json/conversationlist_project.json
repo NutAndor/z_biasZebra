@@ -1,0 +1,1535 @@
+[
+    {
+        "id":"kentinitiation1",
+        "message":"What do you want, grasseater? Your kind isn't welcome here.",
+        "replies":[
+            {
+                "text":"Grasseater?",
+                "nextPhraseID":"kentinitiation1reply1"
+            },
+            {
+                "text":"Do you know where Istif's husband was hunting before he went missing?",
+                "nextPhraseID":"kentinitiation1quest1reply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I think I know why your people are sick",
+                "nextPhraseID":"kentquest2kentman1reply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":5
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rootquesthidden",
+                        "value":2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentinitiation1reply1",
+        "message":"Well, you're either a grasseater or one of those filthy ground diggers. I heard that all the ground diggers died though. Either way, you're not one of us."
+    },
+    {
+        "id":"kentinitiation1reply2",
+        "message":"Kent's Hollow is where the real men live. We don't wait for our food to grow out of the ground, we hunt our food, as man was supposed to. Go chew on some shrubbery. (He spits at you)",
+        "replies":[
+            {
+                "text":"Do you know where Istif's husband was hunting before he went missing?",
+                "nextPhraseID":"kentinitiation1quest1reply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentchild1reply1",
+        "message":"This is a pretty flower. It's getting skinny though.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentchild1reply2"
+            }
+        ]
+    },
+    {
+        "id":"kentchild1reply2",
+        "message":"Dad said that it's withering, that it's dying.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentchild1reply3"
+            }
+        ]
+    },
+    {
+        "id":"kentchild1reply3",
+        "message":"Am I dying?",
+        "replies":[
+            {
+                "text":"Do you know where your dad was last hunting?",
+                "nextPhraseID":"kentchild1quest1reply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentchild1quest1reply1",
+        "message":"He's dead. Istif is also dead. I know it. The big bear ate them because we ate her babies. When I wake up at night, I can hear her walkking in the woods. Manay's fire keeps her away, but she's still there.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":3
+            }
+        ]
+    },
+    {
+        "id":"kentinitiation1quest1reply1",
+        "message":"Ah, she involved you in this, didn't she? Panicky girl. Tell you what, I'd rather he die than enlist the help of some grasseater. Now shoo, go munch on some tree (He spits at you)",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":2
+            }
+        ]
+    },
+    {
+        "id":"kentquest1initiation",
+        "message":"Oh, am I so desparate I'd ask a grasseater for help?",
+        "replies":[
+            {
+                "text":"How do you know I'm a grasseater?",
+                "nextPhraseID":"kentquest1initiationreply1"
+            }
+        ]
+    },
+    {
+        "id":"kentquest1initiationreply1",
+        "message":"You're all plump and you have fat covering your meat and bones. Oh, please, help me! Three days ago my lover went hunting and never returned. My elder son went out to find him, and he is now missing as well! Please, find them!",
+        "replies":[
+            {
+                "text":"I have better things to do.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Alright, I'll find them.",
+                "nextPhraseID":"kentquest1initiationreply2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest1initiationreply2",
+        "message":"Thank you!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"kentinitiation2reply1",
+        "message":"Do I look like I'm alright?\n\nNow that he said that, you notice that something is indeed wrong with his body. He has almost no fat, his torso is emanciated, and his joints are swollen.",
+        "replies":[
+            {
+                "text":"Huh. Best of luck with your struggles.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"What do you think is happening to you?",
+                "nextPhraseID":"kentinitiation2reply2"
+            }
+        ]
+    },
+    {
+        "id":"kentinitiation2reply2",
+        "message":"A sickness has arrived. Everyone is struggling. Ka is bedridden,  Mostef lost the strenght to butcher meat, and I can't lift my axe. It's just that freak Gunret who hadn't caught it yet.",
+        "replies":[
+            {
+                "text":"What do you think caused it?",
+                "nextPhraseID":"kentquest2initiation2reply1"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation2reply1",
+        "message":"I'll tell ya what I think. We've been cursed. I told them all that Gunret's bad news, but they had to take in that wildling. Just look at him. he's the only one who's all fine and dandy!\n\nI should have axed him when I found him... Those woods are not normal, they're harsh and wild and brutal. Some freak growing up there must have been touched by the cruel soul of the wilderness.",
+        "replies":[
+            {
+                "text":"I see",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":2
+            },
+            {
+                
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation1reply1",
+        "message":"Why are you here, grasseater? Want to look at your folks' handywork? ",
+        "replies":[
+            {
+                "text":"What are you talking about?",
+                "nextPhraseID":"kentquest2initiation1reply2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation1reply2",
+        "message":"I know your folks poisoned us. I've seen your people walking along the river killing lizards and collecting Izthiel claws. You've brewed up a potion to end us, didn't you? Grasseaters always envied us, and now you're gonna kill us. Well, now we're weak and my love is dying, happy?",
+        "replies":[
+            {
+                "text":"I, uh-",
+                "nextPhraseID":"kentquest2initiation1reply3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation1reply3",
+        "message":"(He spits at you and turns away)"
+    },
+    {
+        "id":"kentquest2initiation1",
+        "replies":[
+            {
+                "nextPhraseID":"kentquest2initiation1reply1"
+            },
+            {
+                "text":"I know what caused the disease your people are suffering from",
+                "nextPhraseID":"kentquest2kentman2reply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":7
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":6
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rootquesthidden",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"kentman2postkentquest2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation2reply4",
+        "message":"(He spits at you and turns away)"
+    },
+    {
+        "id":"kentwoman2",
+        "message":"",
+        "replies":[
+            {
+                "nextPhraseID":"kentwoman2reply1"
+            },
+            {
+                "nextPhraseID":"kentwoman2reply2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentman3select",
+        "replies":[
+            {
+                "nextPhraseID":"kentman3initiation1reply"
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation1reply",
+        "message":"Heeh, hi chubby man",
+        "replies":[
+            {
+                "text":"Beg your pardon?",
+                "nextPhraseID":"kentman3initiation1reply1"
+            },
+            {
+                "text":"Can I have some soft rocks?",
+                "nextPhraseID":"rootpotionsoupreply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rootquesthidden",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "text":"The wolves outside seem to be diseased. Do you know anything about that?",
+                "nextPhraseID":"rootquest1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"Can I have some soft rocks?",
+                "nextPhraseID":"rootpotionsoupreply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":6,
+                        "negate":false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation1reply1",
+        "message":"(He laughs, then grunts) You funny. Me Gunret. Me not people. Me Gunret.",
+        "replies":[
+            {
+                "text":"O...kay? Have a good day, Gunret.",
+                "nextPhraseID":"kentman3initiation1reply1end"
+            },
+            {
+                "text":"Everyone else seems to be sick. Why do you think they're sick?",
+                "nextPhraseID":"kentman3initiation2quest2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"So what is this \"soft rock\"?",
+                "nextPhraseID":"rootquest3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rootquesthidden",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation1reply1end",
+        "message":"No good day. Day bad. Night bad. Food bad.. Hoomans dumb and dead will be. Water good. \n(He turns away and fiddles with a rock)"
+    },
+    {
+        "id":"kentman3initiation2quest2",
+        "message":"Sick. Very sick. (He immitates vomiting, then a sore neck, then shakes his head rapidly). ",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentman3initiation2quest2branch1reply1"
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation2quest2branch1reply1",
+        "message":"They dumb. Eat food. Food bad. Me eat water and soft rock. Yummy. (He points at his stomach) Good, no sick.",
+        "replies":[
+            {
+                "text":"I, understand? So you're healthy because you don't eat food but instead you eat rocks?",
+                "nextPhraseID":"kentman3initiation2quest2branch1reply2"
+            },
+            {
+                "text":"Jasem thinks that you cursed the village.",
+                "nextPhraseID":"kentman3initiation2quest2branch2reply3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":3
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation2quest2branch1reply2",
+        "message":"Soft rock, not rock. Health. Yes. Good rock, bad food.",
+        "replies":[
+            {
+                "text":"Alright, have a good day.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Weirdo...",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"kentman3initiation2quest2branch2reply3",
+        "message":"No! No! Jasem dumb! Jasem eat bad food! Jasem hate me for bad food! I no eat bad food, but I no turn food bad!",
+        "replies":[
+            {
+                "text":"I see",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":4
+            }
+        ]
+    },
+    {
+        "id":"rootpotionsoupreply1",
+        "message":"Give me red rocks.",
+        "replies":[
+            {
+                "text":"Here's 1 ruby for a, er, soft rock.",
+                "nextPhraseID":"root1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Here's 5 rubies for five soft rocks.",
+                "nextPhraseID":"root5",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"Here's 25 rubies for 25 soft rocks.",
+                "nextPhraseID":"root25",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":25
+                    }
+                ]
+            },
+            {
+                "text":"Here's 5 rubies for a soft rock water.",
+                "nextPhraseID":"rootsoup1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"Here's 25 rubies for 5 soft rock water",
+                "nextPhraseID":"rootsoup5",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"rootpotionsoupreply2",
+        "message":"givepotion",
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"rootpotionsoup"
+            }
+        ]
+    },
+    {
+        "id":"firstdog1",
+        "message":"The small dog growls at you, baring  its fangs. Its eyes are red and its coat is balding, revealing diseased skin.",
+        "replies":[
+            {
+                "text":"Leave",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Attack",
+                "nextPhraseID":"firstdog2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":3
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"firstdog2",
+        "message":"It leaps forward and scratches your arm.",
+        "replies":[
+            {
+                "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"kentrabies",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"rootquest1",
+        "message":"Yes. Yes. Bad food. Wulf is bad food. Dumb people eat deer. Deer all dead. Now dumb eat wulf. Wulf bad food.",
+        "replies":[
+            {
+                "text":"I have no idea what you just said means",
+                "nextPhraseID":"kentman3initiation1reply1"
+            },
+            {
+                "text":"What do you eat then?",
+                "nextPhraseID":"rootquest2"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"rootquesthidden",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"rootquest2",
+        "message":"Gunret eat water and soft rock. Soft rock yummy.",
+        "replies":[
+            {
+                "text":"What is this \"soft rock\"?",
+                "nextPhraseID":"rootquest3"
+            }
+        ]
+    },
+    {
+        "id":"rootquest3",
+        "message":"Soft rock under tree. Yummy. No bad. No sick.",
+        "replies":[
+            {
+                "text":"Under...tree? What tree? Do these woods have some magical trees?",
+                "nextPhraseID":"rootquest4"
+            }
+        ]
+    },
+    {
+        "id":"rootquest4",
+        "message":"Magic? No. Tree. All tree. Soft rock lives under all tree.",
+        "replies":[
+            {
+                "text":"I see. Can I have some of this soft rock?",
+                "nextPhraseID":"rootquest5"
+            }
+        ]
+    },
+    {
+        "id":"rootquest5",
+        "message":"No.",
+        "replies":[
+            {
+                "text":"Please?",
+                "nextPhraseID":"rootquestdeadend"
+            },
+            {
+                "text":"Do you want gold? I have gold.",
+                "nextPhraseID":"rootquest6"
+            },
+            {
+                "text":"Do you want me to give you something in exchange?",
+                "nextPhraseID":"rootquest6"
+            }
+        ]
+    },
+    {
+        "id":"rootquestdeadend",
+        "message":"No no. \n(He turns away)",
+        "replies":[
+            {
+                "text":"Eh, I didn't want your dumb rock anyways.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"rootquest6",
+        "message":"Ooh, we trade! Like dumb man trade with outside man! They take yellow rock. I no like yellow. Yellow sad.\n(He frowns, then grins)",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"rootquest7"
+            }
+        ]
+    },
+    {
+        "id":"rootquest7",
+        "message":"I like red rock! Red rock pretty! Red rock nice! You have red rock?\n\n",
+        "replies":[
+            {
+                "text":"Red rocks? You mean rubies? (You show him a ringle ruby)",
+                "nextPhraseID":"rootquest8",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gem2",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I'm sorry, I don't have any red rocks.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"rootquest8",
+        "message":"Yes! Yes! I give soft rock for 5. No, no. I give soft rock water for five. Soft rock for one. Good trade like dumb man and outside man!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"rootpotionsoupreply1"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"rootquesthidden",
+                "value":2
+            }
+        ]
+    },
+    {
+        "id":"root1",
+        "message":"Take soft rock",
+        "replies":[
+            {
+                "text":"Thank you",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"root1"
+            }
+        ]
+    },
+    {
+        "id":"root5",
+        "message":"Take soft rock",
+        "replies":[
+            {
+                "text":"Thank you",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"root5"
+            }
+        ]
+    },
+    {
+        "id":"root25",
+        "message":"Take soft rock",
+        "replies":[
+            {
+                "text":"Thank you",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"root25"
+            }
+        ]
+    },
+    {
+        "id":"rootsoup1",
+        "message":"Take soft rock water",
+        "replies":[
+            {
+                "text":"Thank you",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"sootsoup1"
+            }
+        ]
+    },
+    {
+        "id":"rootsoup5",
+        "message":"Take soft rock water",
+        "replies":[
+            {
+                "text":"Thank you",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"rootsoup5"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman1reply1",
+        "message":"Oh, do you know? And of course, the glorious grasseater comes to save us all poor \"primitive\" men, right? Of course you will be the hero to save us!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentquest2kentman1reply2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman1reply2",
+        "message":"Fat chance! You're just here to rub your grassy ego at our expense! (He spits at you).",
+        "replies":[
+            {
+                "text":"Fine, go wallow in your misery",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I can prove it! I have evidence!",
+                "nextPhraseID":"kentquest2kentman1reply3"
+            },
+            {
+                "text":"But-",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman1reply3",
+        "message":"Then prove your nonsense",
+        "replies":[
+            {
+                "text":"I, uh, I'll be back",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"The wolves you're eating are all infected, and you're catching the disease by eating them. You should change your diet",
+                "nextPhraseID":"kentquest2kentman1reply4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman1reply4",
+        "message":"Ah, and now the grasseater is proselytizing. Here to preach about your greater ways, eh? Some nonsense about meat making us sick? You're as mad as Gunret!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":6
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentlumberjackreply1",
+        "message":"I told ya, it's that accursed Gunret. He's the one behind all this.",
+        "replies":[
+            {
+                "text":"No, it's the meat you eat. These animals are all diseased, and by eating their flesh you're getting the disease as well.",
+                "nextPhraseID":"kentquest2kentlumberjackreply2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentlumberjackreply2",
+        "message":"Nonsense! You grasseaters just hate our lifestyle! You think I'm going to believe this without evidence?",
+        "replies":[
+            {
+                "text":"I can get you proof",
+                "nextPhraseID":"kentquest2kentlumberjackreply3"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentlumberjackreply3",
+        "message":"Then do so! Until then, I'll go with my gut.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":7
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply1",
+        "message":"Even if I believed you, would it matter? We are already dying, this changes nothing.",
+        "replies":[
+            {
+                "text":"It's because your meat is infected, you shouldn't eat those wolves.",
+                "nextPhraseID":"kentquest2kentman2reply2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply2",
+        "message":"Are you listening to me? I said it doesn't matter, we're dying anyways.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentquest2kentman2reply3"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply3",
+        "message":"Besides, what are we to eat if not the wolves? The deer are gone, there are few bears in these mountains, and there are no birds.\n\nLeave, my love needs my comforting in her final days.",
+        "replies":[
+            {
+                "text":"I see...",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"What if I can cure her?",
+                "nextPhraseID":"kentquest2kentman2reply4"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply4",
+        "message":"You can?\n\n(His eyes gleam with hope)",
+        "replies":[
+            {
+                "text":"Well, maybe, I'm not sure.",
+                "nextPhraseID":"kentquest2kentman2reply5"
+            },
+            {
+                "text":"Give her this",
+                "nextPhraseID":"kentquest2kentman2reply6",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"kentpotion",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply5",
+        "message":"Why torture me with false hope if you can't!"
+    },
+    {
+        "id":"kentquest2kentman2reply6",
+        "message":"I will!\n\n(He rushes to Ka's side and helps her drink the juice. Slowly, colour returns to her face. Her foot stops twitching, and her breathing is not as laboured)\n",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentquest2kentman2reply7"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply7",
+        "message":"Thank you, grasseater! How can I repay you?",
+        "replies":[
+            {
+                "text":"Some gold wouldn't be missed",
+                "nextPhraseID":"kentquest2kentman2reply8"
+            },
+            {
+                "text":"It would be beneficial if you stop eating all that infected meat.",
+                "nextPhraseID":"kentquest2kentman2reply9"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply8",
+        "message":"I suppose we can give you some gold we have. We don't need it, and we only use it with the occasional outsider.",
+        "replies":[
+            {
+                "text":"You should also stop eating that infected meat",
+                "nextPhraseID":"kentquest2kentman2reply9"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"kentquest2kentman2"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply9",
+        "message":"But what else would we eat? The deer are all extinct, the bears are far too large, and there are no birds in these woods.",
+        "replies":[
+            {
+                "text":"Well, how did the wolves get infected in the first place? Now that I think about it, without any deer, what are they eating themselves?",
+                "nextPhraseID":"kentquest3initiation"
+            },
+            {
+                "text":"Gunret has been eating the roots that the juice I gave you are made from. He's actually the one who gave me the juice.",
+                "nextPhraseID":"kentquest2kentman2reply10"
+            }
+        ]
+    },
+    {
+        "id":"kentquest3initiation",
+        "message":"Hmm. I always assumed that the wolves just ate other wolves. But that would mean they'd eventually all die out, and they're as many as ever. Could it be that they're eating something that infected them, just as eating them infected us?",
+        "replies":[
+            {
+                "text":"Perhaps I should investigate some more?",
+                "nextPhraseID":"kentquest3initiation2"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"kentquest2kentman2reply10",
+        "message":"Fat chance. I may like you now, grasseater, but I am not about to change my principles and abandon the traditions of Kent's Hollow. We need to find a new source of food. A new animal. Or somehow cure the wolves.",
+        "replies":[
+            {
+                "text":"Well, how did the wolves get infected in the first place? Now that I think about it, without any deer, what are they eating themselves?",
+                "nextPhraseID":"kentquest3initiation"
+            }
+        ]
+    },
+    {
+        "id":"kentwoman2reply1",
+        "message":"(She groans in pain)"
+    },
+    {
+        "id":"kentwoman2reply2",
+        "message":"Thank you for saving my life, young man."
+    },
+    {
+        "id":"kentquest3initiation2",
+        "message":"Good idea. I'll let the rest of Kent's Hollow know of your contributions.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest2",
+                "value":8
+            }
+        ]
+    },
+    {
+        "id":"kentlumberjackinitiation1",
+        "message":"(The man limps around his house, panting)",
+        "replies":[
+            {
+                "text":"Are you alright?",
+                "nextPhraseID":"kentinitiation2reply1"
+            },
+            {
+                "text":"I know what caused the illness",
+                "nextPhraseID":"kentquest2kentlumberjackreply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rootquesthidden",
+                        "value":2
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"lumberjackthing1",
+        "replies":[
+            {
+                "nextPhraseID":"kentlumberjackinitiation1"
+            },
+            {
+                "nextPhraseID":"kentquest3lumberjackreply1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"kentquest3lumberjackreply3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"kentlumberjackfinal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":6
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentquest3lumberjackreply1",
+        "message":"I heard you helped out Ka. Guess you might not be a total liar after all.",
+        "replies":[
+            {
+                "text":"You're welcomd",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I need your help. There's a withered tree blocking the path to the deeperparts of the woods.",
+                "nextPhraseID":"kentquest3lumberjackreply2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentinitiation1_1",
+        "replies":[
+            {
+                "nextPhraseID":"kentinitiation1"
+            },
+            {
+                "nextPhraseID":"kentman1stubborn",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentman1stubborn",
+        "message":"You may have won them over, but you're not fooling me, grasseater. "
+    },
+    {
+        "id":"kentman2postkentquest2",
+        "message":"Thank you for helping us."
+    },
+    {
+        "id":"pollutionblock",
+        "replies":[
+            {
+                "nextPhraseID":"pollutionblock1"
+            },
+            {
+                "nextPhraseID":"polutionblock2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"pollutionblock1",
+        "message":"The path ahead is blocked"
+    },
+    {
+        "id":"polutionblock2",
+        "message":"The path ahead is no longer blocked. Jasem must have cleared it."
+    },
+    {
+        "id":"sludgewolf3initiation",
+        "message":"This wolf is gulping down the sludge.",
+        "replies":[
+            {
+                "text":"End its suffering.",
+                "nextPhraseID":"F"
+            },
+            {
+                "text":"Gross.",
+                "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                
+            }
+        ]
+    },
+    {
+        "id":"sludgewolf1",
+        "message":"The wolf tries to growl, but all that comes out are desperate gasps.\n\nIt's clear that this wolf is dying. It's skin is gone, and its exposed flesh is falling apart. How is it even alive?",
+        "replies":[
+            {
+                "text":"End its misery",
+                "nextPhraseID":"F"
+            },
+            {
+                "text":"Disgusting! The smell!",
+                "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":4
+            }
+        ]
+    },
+    {
+        "id":"kentlake",
+        "message":"You feel a warmth radiating from the pool of sludge."
+    },
+    {
+        "id":"kentquest3lumberjackreply2",
+        "message":"Consider it done, foreigner."
+    },
+    {
+        "id":"kentquest3lumberjackreply3",
+        "replies":[
+            {
+                "text":"There is a lake of chemical sludge in the forest. It seems that the wolves are feeding on it, and their flesh is tainted.",
+                "nextPhraseID":"kentquest3lumberjackreply4"
+            }
+        ]
+    },
+    {
+        "id":"kentquest3lumberjackreply4",
+        "message":"This is worrying indeed. But still, foreigner, I will not eat grass. There must be another way. Can you do something about that pool?",
+        "replies":[
+            {
+                "text":"I will try, but no promises.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"You're insane!",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":6
+            }
+        ]
+    },
+    {
+        "id":"kentlumberjackfinal",
+        "message":"Have you found a way to clean the forest?",
+        "replies":[
+            {
+                "text":"Not yet.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"kentchildselector",
+        "replies":[
+            {
+                "nextPhraseID":"kentchildreply1"
+            }
+        ]
+    },
+    {
+        "id":"kentchildreply1",
+        "message":"(The teen groans in pain)",
+        "replies":[
+            {
+                "text":"Are you Istif? Your mother sent me here to find you",
+                "nextPhraseID":"kentchild2"
+            }
+        ]
+    },
+    {
+        "id":"kentchild2",
+        "message":"(The child starts to cry)\n\nYes, I am. I went out to find my dad, but the wolves hurt me! Tell mommy I love her!",
+        "replies":[
+            {
+                "text":"Maybe I can find you a health potion",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give small vial of health)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"health_minor",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give small potion of health)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"health_minor2",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give potion of health)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"health",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give major flask of health)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"health_major",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give major potion of health)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"health_major2",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Relax, I can help you. I have a healing potion. (Give bonemeal potion)",
+                "nextPhraseID":"kentchild3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bonemeal_potion",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentchild3",
+        "message":"(The child gulps down the potion)\n\nThanks, I'm feeling better. I'm going home, I miss my mommy.",
+        "replies":[
+            {
+                "nextPhraseID":"R"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":4
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"kentchild2_2",
+                "mapName":"kentshollowhouse2"
+            },
+            {
+                "rewardType":"deactivateSpawnArea",
+                "rewardID":"kentchild2",
+                "mapName":"kentforest2_1"
+            }
+        ]
+    },
+    {
+        "id":"kentchild2_2reply",
+        "message":"Thanks for saving me, stranger.",
+        "replies":[
+            {
+                "text":"You're welcome, kid",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Better be grateful for it, kid",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1",
+        "replies":[
+            {
+                "nextPhraseID":"kentquest1initiation"
+            },
+            {
+                "nextPhraseID":"kentwoman1inform",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":4
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"kentwoman1reply",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1reply",
+        "message":"Thank you for finding my son, stranger"
+    },
+    {
+        "id":"kentlovercorpse",
+        "message":"This seems to be the corpse of Nafi's lover",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1inform",
+        "message":"",
+        "replies":[
+            {
+                "text":"I have found your son.",
+                "nextPhraseID":"kentwoman1inform2"
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1inform2",
+        "message":"Yes, he has returned thank you.",
+        "replies":[
+            {
+                "text":"Unfortunately, your lover did not survive.",
+                "nextPhraseID":"kentwoman1inform3"
+            },
+            {
+                "text":"I have also killed the bear that stalks this place",
+                "nextPhraseID":"kentwoman1bear1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"kentbear",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1inform3",
+        "message":"Oh no! What will I do with myself! ",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentwoman4"
+            }
+        ]
+    },
+    {
+        "id":"kentwoman4",
+        "message":"No,I should be strong. My children lost their father, I must be strong for them.\n\nThank you, stranger, for giving me closure.",
+        "replies":[
+            {
+                "text":"You're welcome",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":7
+            }
+        ]
+    },
+    {
+        "id":"kentwoman1bear1",
+        "message":"Oh, thank you! That terrible creature has been harrassing us for so long",
+        "replies":[
+            {
+                "text":"Unfortunately your lover did not survive.",
+                "nextPhraseID":"kentwoman1inform3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest1",
+                "value":6
+            }
+        ]
+    }
+]
