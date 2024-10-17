@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="4">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="19" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="4">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,28 +180,28 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer id="1" name="Ground" width="30" height="30">
+ <layer id="1" name="Ground" width="19" height="12">
   <data encoding="base64" compression="zlib">
-   eJztkbENgCAQRa/FEaSQDXBTN2AVexr2cAql1sC/5C6x+C95DSH3ii9CCCGEEPIftkVkn9j/WJOem0ccm5y6JY716tYwVttFtssOXWS7rkd3tl1x6s5uImq7yHaIWdk9V5tuv6OhGXWbsnuFt/XjDRHhBqmYhlU=
+   eJxjYCAM5LkYGAwIYJAaYoACUF2/NH6sQIJZ86TxY1LMOsWJHytwERcW+kSaRUxYgDCxZhEKi3kkmEVIHTFYgciwIAaDzNkvRR2zQOacp5JZIHNecWLiU1jEiMEA902GVQ==
   </data>
  </layer>
- <layer id="2" name="Objects" width="30" height="30">
+ <layer id="2" name="Objects" width="19" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgYBehgIv9Au2BggIAwhG5lob/da2gc5mFsDAyhQBwOxBFsELEoIB0NxDFs1LNnGisqPw1odioQpwNxBtSeLCDdC/RvDpn2LmVBYBhYBrR3BhDf4sSvdy4F4WyOli4agWYtB9q5ghW7enSAHjbUBshpaA4SexmV7O1FC7seAmFpQaV8tJaGeQMAI+wUOQ==
+   eJxjYBhYMJF/gB1AAAgIQ+hWFuqYt4YM/4axMTCEAnE4EEewQcSigHQ0EMew4dc7jRWVnwZUnwrE6UCcAdWbBaR7ge7KQTJrKQsCw8AyoFkzgPgWJ34756L50Rwt7BqB8suB5qxAcxuxfiAGIIfzHCT2Mjxm9aK5u4dAXFngSRNryUzXAMNuFDk=
   </data>
  </layer>
- <layer id="3" name="Above" width="30" height="30">
+ <layer id="3" name="Above" width="19" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgY3ECea2DsVQDam8REXztlmSD20gMwQjEM0MteQSiGAX0q2etMIK6a0PB+KVQ+uSCYxDRyHmhvFhsDQzYQ57BRYDEamM5KPbNGAQQkExm3knQuJ6gJAHV2CeE=
+   eJxjYCAPyHORqRELUACalcREuTmyTBCzyAWMUAwDlJglCMUwoI/HLGcCfm9Cw/ulUPnIIJjEcDwPNCuLjYEhG4hz2PCrnc5KmtmDHSQTGVaSVEibxAIAIxkJ4Q==
   </data>
  </layer>
- <layer id="4" name="Walkable" width="30" height="30" visible="0">
+ <layer id="4" name="Walkable" width="19" height="12" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgYPGCjGHF41F7K7cUnRo695PoFXWy42YtuPzY+JfbiMpcYc0i1F5976G0vqWYMhL3kmIMr7ZCa3oi1FwC/lFMu
+   eJxjYCAMNooRh4kBg9ksfGLE2oXLTnSxgTIL3UxcfGLUEgL41FPTLFIAqemCFPPQzSYnXgBbMVMu
   </data>
  </layer>
  <objectgroup id="5" name="Mapevents">
-  <object id="1" name="kentshollowhouse3exit" type="mapchange" x="224" y="928" width="32" height="32">
+  <object id="1" name="kentshollowhouse3exit" type="mapchange" x="160" y="352" width="32" height="32">
    <properties>
     <property name="map" value="kentshollow"/>
     <property name="place" value="kentshollowhouse3entry"/>
@@ -209,12 +209,12 @@
   </object>
  </objectgroup>
  <objectgroup id="6" name="Spawn">
-  <object id="2" name="kentman2" type="spawn" x="96" y="800" width="544" height="128">
+  <object id="2" name="kentman2" type="spawn" x="32" y="224" width="544" height="128">
    <properties>
     <property name="spawngroup" value="kentman2"/>
    </properties>
   </object>
-  <object id="3" name="kentwoman2" type="spawn" x="384" y="704" width="32" height="32">
+  <object id="3" name="kentwoman2" type="spawn" x="320" y="128" width="32" height="32">
    <properties>
     <property name="spawngroup" value="kentwoman2"/>
    </properties>
