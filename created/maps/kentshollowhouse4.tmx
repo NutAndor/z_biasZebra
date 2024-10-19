@@ -204,6 +204,7 @@
   <object id="1" name="kentshollowhouse4exit" type="mapchange" x="96" y="256" width="32" height="32">
    <properties>
     <property name="map" value="kentshollow"/>
+    <property name="place" value="kentshollowhouse4entry"/>
    </properties>
   </object>
  </objectgroup>
