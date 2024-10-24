@@ -85,11 +85,11 @@
         "stages":[
             {
                 "progress":1,
-                "logText":""
+                "logText":"Wulf is bad food"
             },
             {
                 "progress":2,
-                "logText":""
+                "logText":"Trade active"
             }
         ]
     },
@@ -120,7 +120,7 @@
             },
             {
                 "progress":6,
-                "logText":"6- I've told Jasem about the pool of sludge. He is worried, but refuses to stop eating wolf meat.",
+                "logText":"I've told Jasem about the pool of sludge. He is worried, but refuses to stop eating wolf meat.",
                 "rewardExperience":7500,
                 "finishesQuest":1
             }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="26" height="29" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="4">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="26" height="29" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="5">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -182,12 +182,12 @@
  </tileset>
  <layer id="1" name="Ground" width="26" height="29">
   <data encoding="base64" compression="zlib">
-   eJxjYKA/2MyJH4/aQ5491LJv1B7a2nOaiT72wOw6A8W0sgOG7zFB8C4S7CLHHhheTid7dtLJHuS4QsfUtAc5rtAxte0hJq/Ryo5Re0g3k9ppetSeUXtG7aG9PQAiLE3P
+   eJxjYCAfbOQkHiODzZz48ag95NmDbt9ws4eUcBzM9pxmoo89MLvOQDEp9pBiBwzfY4LgXTj8hw2QYw8ML6eTPTvpZA9yXKFjatqDHFfomNr2EJPXaGXHqD3Em4lcBqCXGbSyB4SR0x0t7UEu30btGbVnuNkDACSlvjo=
   </data>
  </layer>
  <layer id="2" name="Objects" width="26" height="29">
   <data encoding="base64" compression="zlib">
-   eJzdllEOgjAMhs1ugHf2CKg3ALwB4g0QH9GXiScxQkYTbLqu3YgPNvlDAoVvZT8tm42L0ugVE3DvWaBUTjXqKlCxAucp0BqcUPTZbzhT/BunTvA5cHZM/j1zx9Y4VozPgdMJ8q1xLK3PYT3NqEG4Lqv0OTCglj77vp6P5w7oGQ+UUxh6vyhVnlrquU78bJwT6lFLDhWtYM9a5jqu1cexgj2zERy8P6mBOdO73DPCXvAF55HQPCgUvYKrJzQPwHNcUP7PhR6AkHgu9K0uOUcib+ppEs9pOCcmb+nDnPCGhnOZj++tbO1VJOcm9BT0mSaS8xJyYCZ0kRxf4B4BM2FQcsqE71/LocT1ISzJ7I75t9b+c38Apb/WnA==
+   eJy9lVEOgjAMhslugHf2CKg3AL0B4A0QH9GXiScxssCS+Vu6bhCa/OHBbp+lP22hkqSI0HlQSOD5SqClHHP2JlC+Aucl0BocX3TpNhwTW3JM/sHR0XM2hlNG+Bxz90z+Ix2fjRpZIT5HTiuoSauRFeJzl1MP6oXvToPPsV/YO6ylS3/vy4gePyEnV//94uYVVUs51Yl3Yw43oyR+aQQ9a5jfsdY5jhb0TEdwsD9LAzkV4xfJ926D84hvH8TMszkOtwes57ig/J8JPWBD4jlfzS7nROSZmSbxHMVxfehyLsxdrg8zwhsh9Vyn52fn/+/4vkM4d6Gn7JypIzlvIcfuhDaSMxc4I+xO6AM51O6Qfv+hHErcHEKF7u4l4jhffUzsCg==
   </data>
  </layer>
  <layer id="3" name="Above" width="26" height="29">
@@ -195,14 +195,15 @@
    eJztwQENAAAAwqD3T20ON6AAAIA3AwvIAAE=
   </data>
  </layer>
- <layer id="4" name="Walkable" width="26" height="29">
+ <layer id="4" name="Walkable" width="26" height="29" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20ON6AAAIA3AwvIAAE=
+   eJzbKMbAsHEUDxlMDBi1Z+DsIcau4WYPNezCZR617aSHPfjMGC72UApolQ6Hiz3Y1FDDjIG2h5phj03fqD3Dwx5q2j3QmB7uAwC/S3Oi
   </data>
  </layer>
  <objectgroup id="5" name="Mapevents">
   <object id="1" name="kentlovercorpse" type="sign" x="160" y="704" width="32" height="32"/>
-  <object id="2" name="kentcaveexit" type="mapchange" x="640" y="576" width="96" height="32">
+  <object id="2" name="kentcaveentry" type="mapchange" x="640" y="576" width="96" height="32"/>
+  <object id="4" name="kentcaveexit" type="mapchange" x="640" y="608" width="96" height="32">
    <properties>
     <property name="map" value="kentforest2_1"/>
     <property name="place" value="kentcaveentry"/>

@@ -96,7 +96,7 @@
     },
     {
         "id":"kentchild1quest1reply1",
-        "message":"He's dead. Istif is also dead. I know it. The big bear ate them because we ate her babies. When I wake up at night, I can hear her walkking in the woods. Manay's fire keeps her away, but she's still there.",
+        "message":"He's dead. Istif is also dead. I know it. The big bear ate them because we ate her babies. When I wake up at night, I can hear her walking in the woods. Manay's fire keeps her away, but she's still there.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -230,11 +230,17 @@
         "id":"kentquest2initiation1",
         "replies":[
             {
-                "nextPhraseID":"kentquest2initiation1reply1"
+                "nextPhraseID":"kentman2postkentquest2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    }
+                ]
             },
             {
-                "text":"I know what caused the disease your people are suffering from",
-                "nextPhraseID":"kentquest2kentman2reply1",
+                "nextPhraseID":"kentquest2initiation1a",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -254,14 +260,17 @@
                 ]
             },
             {
-                "nextPhraseID":"kentman2postkentquest2",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"kentquest2",
-                        "value":8
-                    }
-                ]
+                "nextPhraseID":"kentquest2initiation1reply1"
+            }
+        ]
+    },
+    {
+        "id":"kentquest2initiation1a",
+		"message":"The grasseater again. What do you want?",
+        "replies":[
+            {
+                "text":"I know what caused the disease your people are suffering from",
+                "nextPhraseID":"kentquest2kentman2reply1"
             }
         ]
     },
@@ -271,11 +280,7 @@
     },
     {
         "id":"kentwoman2",
-        "message":"",
         "replies":[
-            {
-                "nextPhraseID":"kentwoman2reply1"
-            },
             {
                 "nextPhraseID":"kentwoman2reply2",
                 "requires":[
@@ -285,6 +290,9 @@
                         "value":8
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"kentwoman2reply1"
             }
         ]
     },
@@ -547,6 +555,7 @@
         "message":"It leaps forward and scratches your arm.",
         "replies":[
             {
+				"text":"I'll teach you manners ...",
                 "nextPhraseID":"F"
             }
         ],
@@ -652,14 +661,13 @@
         "message":"I like red rock! Red rock pretty! Red rock nice! You have red rock?\n\n",
         "replies":[
             {
-                "text":"Red rocks? You mean rubies? (You show him a ringle ruby)",
+                "text":"Red rocks? You mean rubies? (You show him a single ruby)",
                 "nextPhraseID":"rootquest8",
                 "requires":[
                     {
-                        "requireType":"inventoryRemove",
+                        "requireType":"inventoryKeep",
                         "requireID":"gem2",
-                        "value":1,
-                        "negate":true
+                        "value":1
                     }
                 ]
             },
@@ -762,7 +770,7 @@
         "rewards":[
             {
                 "rewardType":"dropList",
-                "rewardID":"sootsoup1"
+                "rewardID":"rootsoup1"
             }
         ]
     },
@@ -1066,19 +1074,6 @@
         "id":"lumberjackthing1",
         "replies":[
             {
-                "nextPhraseID":"kentlumberjackinitiation1"
-            },
-            {
-                "nextPhraseID":"kentquest3lumberjackreply1",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"kentquest2",
-                        "value":8
-                    }
-                ]
-            },
-            {
                 "nextPhraseID":"kentquest3lumberjackreply3",
                 "requires":[
                     {
@@ -1098,15 +1093,28 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
+                        "requireID":"kentquest2",
+                        "value":8
+                    },
+                    {
+                        "requireType":"questProgress",
                         "requireID":"kentquest3",
                         "value":6
-                    },
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"kentquest3lumberjackreply1",
+                "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"kentquest2",
                         "value":8
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"kentlumberjackinitiation1"
             }
         ]
     },
@@ -1115,17 +1123,34 @@
         "message":"I heard you helped out Ka. Guess you might not be a total liar after all.",
         "replies":[
             {
-                "text":"You're welcomd",
+                "text":"You're welcome.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"I need your help. There's a withered tree blocking the path to the deeperparts of the woods.",
+                "text":"I need your help. There are large logs of withered trees blocking the path to the deeper parts of the woods.",
                 "nextPhraseID":"kentquest3lumberjackreply2",
                 "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"kentquest3",
                         "value":2
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":3,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I need your help. There are large logs of ...",
+                "nextPhraseID":"kentquest3lumberjackreply2b",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest3",
+                        "value":3
                     }
                 ]
             }
@@ -1135,9 +1160,6 @@
         "id":"kentinitiation1_1",
         "replies":[
             {
-                "nextPhraseID":"kentinitiation1"
-            },
-            {
                 "nextPhraseID":"kentman1stubborn",
                 "requires":[
                     {
@@ -1146,6 +1168,9 @@
                         "value":8
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"kentinitiation1"
             }
         ]
     },
@@ -1161,9 +1186,6 @@
         "id":"pollutionblock",
         "replies":[
             {
-                "nextPhraseID":"pollutionblock1"
-            },
-            {
                 "nextPhraseID":"polutionblock2",
                 "requires":[
                     {
@@ -1172,12 +1194,22 @@
                         "value":3
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"pollutionblock1"
             }
         ]
     },
     {
         "id":"pollutionblock1",
-        "message":"The path ahead is blocked"
+        "message":"The path ahead is blocked",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":2
+            }
+        ]
     },
     {
         "id":"polutionblock2",
@@ -1185,7 +1217,7 @@
     },
     {
         "id":"sludgewolf3initiation",
-        "message":"This wolf is gulping down the sludge.",
+        "message":"[This wolf is gulping down the sludge.]",
         "replies":[
             {
                 "text":"End its suffering.",
@@ -1204,7 +1236,7 @@
     },
     {
         "id":"sludgewolf1",
-        "message":"The wolf tries to growl, but all that comes out are desperate gasps.\n\nIt's clear that this wolf is dying. It's skin is gone, and its exposed flesh is falling apart. How is it even alive?",
+        "message":"[The wolf tries to growl, but all that comes out are desperate gasps.\n\nIt's clear that this wolf is dying. It's skin is gone, and its exposed flesh is falling apart. How is it even alive?]",
         "replies":[
             {
                 "text":"End its misery",
@@ -1225,11 +1257,39 @@
     },
     {
         "id":"kentlake",
-        "message":"You feel a warmth radiating from the pool of sludge."
+        "message":"You feel a warmth radiating from the pool of sludge.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"kentlake_10"
+            }
+        ]
+    },
+    {
+        "id":"kentlake_10",
+        "message":"The wolves seem to drink from the foul water of that lake.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":5
+            }
+        ]
     },
     {
         "id":"kentquest3lumberjackreply2",
-        "message":"Consider it done, foreigner."
+        "message":"Consider it done, foreigner.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"kentquest3",
+                "value":3
+            }
+        ]
+    },
+    {
+        "id":"kentquest3lumberjackreply2b",
+        "message":"It is long done, foreigner."
     },
     {
         "id":"kentquest3lumberjackreply3",
@@ -1370,7 +1430,8 @@
         "message":"(The child gulps down the potion)\n\nThanks, I'm feeling better. I'm going home, I miss my mommy.",
         "replies":[
             {
-                "nextPhraseID":"R"
+                "text":"N",
+				"nextPhraseID":"R"
             }
         ],
         "rewards":[
@@ -1409,7 +1470,14 @@
         "id":"kentwoman1",
         "replies":[
             {
-                "nextPhraseID":"kentquest1initiation"
+                "nextPhraseID":"kentwoman1reply",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"kentquest1",
+                        "value":7
+                    }
+                ]
             },
             {
                 "nextPhraseID":"kentwoman1inform",
@@ -1427,14 +1495,7 @@
                 ]
             },
             {
-                "nextPhraseID":"kentwoman1reply",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"kentquest1",
-                        "value":7
-                    }
-                ]
+                "nextPhraseID":"kentquest1initiation"
             }
         ]
     },
@@ -1455,7 +1516,7 @@
     },
     {
         "id":"kentwoman1inform",
-        "message":"",
+        "message":"Hello.",
         "replies":[
             {
                 "text":"I have found your son.",
@@ -1472,13 +1533,30 @@
                 "nextPhraseID":"kentwoman1inform3"
             },
             {
-                "text":"I have also killed the bear that stalks this place",
+                "text":"I have also killed the bear that stalks this place. Here, take the fur.",
                 "nextPhraseID":"kentwoman1bear1",
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
                         "requireID":"kentbear",
                         "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I have also killed the bear that stalks this place. Here, take the ... Oh, I have lost the fur. Wait, I'll go get it.",
+                "nextPhraseID":"kentwoman1bear1",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"kentbear",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"kentbear",
+                        "value":1,
+						"negate":true
                     }
                 ]
             }
